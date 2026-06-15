@@ -15,7 +15,7 @@
 burst pipe — the bottleneck isn't tapping *buy*, it's the panicked human figuring out
 *what they even need*. Blink's **Zero-Decision Engine** takes a situation in plain words
 (or a photo) and assembles the **complete, dependency-checked package** — then one
-fingerprint buys it. We measure **TTLA — Time-to-Leave-App** (~3s vs ~180s of flailing).
+fingerprint buys it. We measure **TTLA — Time-to-Leave-App** (~3s vs ~180s of flailing)
 
 **Axis 2 — Trust (the moat).** Being first is table stakes. Being *provably right* is the
 differentiator. Blink protects health-critical items with **NEVER_SWAP** locks, fixes
