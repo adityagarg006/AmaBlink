@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #0b0f14;
+  color: #0f172a;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Mission-control backdrop for the whole stage */
+.stage-bg {
+  background:
+    radial-gradient(1200px 600px at 12% -10%, rgba(255, 153, 0, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 92% 0%, rgba(21, 195, 154, 0.10), transparent 55%),
+    linear-gradient(180deg, #0e151d 0%, #0b0f14 100%);
+}
+
+/* thin scrollbars in dark panels */
+.scroll-slim::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-slim::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-slim::-webkit-scrollbar-thumb {
+  background: #2b3a49;
+  border-radius: 8px;
+}
+.scroll-slim::-webkit-scrollbar-thumb:hover {
+  background: #38495a;
+}
+
+/* phone screen scrollbar (light) */
+.scroll-app::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-app::-webkit-scrollbar-thumb {
+  background: #d2d7df;
+  border-radius: 6px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* grid texture for the map */
+.map-grid {
+  background-image:
+    linear-gradient(rgba(59, 157, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 157, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #ff9900;
+  outline-offset: 2px;
+}
