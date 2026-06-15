@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "private": true,
   "description": "Amazon Blink — predictive + guaranteed-right urgent shopping. HackOn with Amazon S6.0, Theme 2.",
+  "engines": {
+    "node": ">=20 <21"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
